@@ -1,0 +1,97 @@
+@import "utilities";
+@import "button";
+
+// Login Page
+.login-container {
+  padding: 3rem 3rem 0;
+}
+.login-bg {
+  background: url("/dist/images/login-bg.jpg") no-repeat center center/cover;
+  height: 100vh;
+}
+
+.notificaton .dot {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #308586;
+  top: 2%;
+  left: 60%;
+  z-index: 1;
+}
+
+.wlcm-note {
+  h6 {
+    font-size: 1.25rem;
+    margin: 18px 0px;
+  }
+  p {
+    font-size: 12px;
+    letter-spacing: 0.3px;
+  }
+}
+
+.login-box {
+  .form-label {
+    font-size: 13px;
+    line-height: 12px;
+    letter-spacing: 0.3px;
+  }
+  .form-control {
+    font-size: 0.93rem;
+    border-radius: 6px;
+    border-color: transparent;
+    background-color: #f2f2f2;
+    height: 48px;
+
+    &:focus {
+      border-color: $primary-color;
+      box-shadow: none;
+    }
+  }
+  .form-check-input:focus {
+    box-shadow: none;
+  }
+  .form-check-input:checked {
+    background-color: $primary-color;
+    border-color: $primary-color;
+  }
+  #togglePassword {
+    margin-left: -30px;
+    cursor: pointer;
+  }
+  .remember-me {
+    font-size: 13px;
+  }
+}
+
+.footer {
+  padding-top: 5rem;
+  .copyright {
+    display: flex;
+    justify-content: space-between;
+    .email {
+      a {
+        font-size: 12px;
+        display: flex;
+        align-items: center;
+
+        i {
+          color: #e02726;
+          font-size: 18px;
+        }
+      }
+    }
+    .copy {
+      font-size: 12px;
+    }
+  }
+  .version {
+    color: $primary-color;
+    cursor: pointer;
+    font-size: 12px;
+  }
+}
+
+@import "responsive";
